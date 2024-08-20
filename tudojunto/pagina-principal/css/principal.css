@@ -3,6 +3,11 @@
     src: url("../../fonts/inter-font.woff") format("woff");
   }  
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     font-family: 'Inter';font-size: 18px;
     margin: 0px;
