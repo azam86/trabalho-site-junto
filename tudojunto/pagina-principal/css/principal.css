@@ -67,7 +67,7 @@ img {
 .bixolista {
     gap: 50px;
     direction:rtl;
-    list-style: url("../../img/downArrow.png");
+    list-style: url("../../img/downArrow.webp");
 }
 
 .footer {
@@ -135,13 +135,13 @@ ul {
 }
 
 .mountain2 {
-    background-image: url("../../img/mountain2.png");
+    background-image: url("../../img/mountain2.webp");
     background-size: cover;
     height: 230px;
 }
 
 .pessoa1 {
-    background-image: url("../../img/pessoa1.png");
+    background-image: url("../../img/pessoa1.webp");
     width: 151px;
     height: 151px;
     position: relative;
@@ -150,7 +150,7 @@ ul {
 }
 
 .pessoa2 {
-    background-image: url("../../img/pessoa2.png");
+    background-image: url("../../img/pessoa2.webp");
     width: 151px;
     height: 151px;
     position: relative;
@@ -163,6 +163,14 @@ ul {
     background-color: #f99233;
 }
 
+@media (max-width:800px) {
+    .doar {
+        display: none;
+    }
+    .cada {
+        display: none;
+    }
+}
 /* PARTE GALERIA */
 
 .options-button {
@@ -364,7 +372,7 @@ figure {
 }
 
 .main {
-    background-image: url("../../img/patinhas.png");
+    background-image: url("../../img/patinhas.webp");
     background-size: cover;
     padding-bottom: 100px;
 }
