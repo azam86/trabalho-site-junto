@@ -26,6 +26,10 @@ img {
     width: 100%;
 }
 
+.tw-h-auto {
+    height: auto;
+}
+
 .tw-justify-center {
     justify-content: center;
 }
