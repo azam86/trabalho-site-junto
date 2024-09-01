@@ -3,49 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/principal.css">
+
     <title>Página Principal</title>
+    <meta property="og:url" content="https://azam86.github.io/trabalho-site-junto/tudojunto/pagina-principal/html/principal.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Acesse AdoteUmBixo!">
+    <meta property="og:description" content="Milhares de bixos estão esperando por um lar!">
+    <meta property="og:image" content="../../img/logo.webp">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/principal.css">
+
     <meta name="description" content="Projeto de adoção de animais que precisam de um lar.">
 </head>
 <body>
-    <header>
-        <div class="tw-flex tw-align-center container-wide tw-mx-auto">
-            <div class="tw-w-full doar">
-                <a class="basic-button basic-button--amarelo" href="/">Donate</a>
+    <header class="header">
+        <div>
+            <div class="tw-flex tw-align-center container-wide tw-mx-auto">
+                <div class="tw-w-full doar">
+                    <a class="basic-button basic-button--amarelo" href="">Donate</a>
+                </div>
+                <div class="tw-justify-center">
+                    <a href="#main"><img src="../../img/logo.webp" width="300px" height="52px" alt="logo do site"></a>
+                </div>
+                <div class="tw-flex tw-w-full tw-justify-end tw-align-center">
+                    <div>
+                        <a href="#login">Entrar</a>
+                        <a class="basic-button basic-button--cinza cada" href="">Cadastre-se</a>
+                    </div>
+                </div>
             </div>
-            <div class="tw-justify-center">
-                <img src="../../img/logo.webp" width="300px" height="52px" alt="logo do site">
-            </div>
-            <div class="tw-flex tw-w-full tw-justify-end tw-align-center">
-                <div>
-                    <a href="/">Entrar</a>
-                    <a class="basic-button basic-button--cinza cada" href="/">Cadastre-se</a>
+        </div>
+        <div class="subheader">
+            <div class="tw-flex tw-align-center container-wide tw-mx-auto">
+                <div class="tw-w-full">
+                    <a class="tw-flex tw-align-center" href="">
+                        <img src="../../img/menuicon.webp" width="30px" height="20px" alt="icone do menu">
+                        <span>MENU</span>
+                    </a>
+                </div>
+                <div class="tw-flex  tw-justify-center tw-w-full">
+                    <a href="#galeria">
+                        <ul class="bixolista tw-flex">
+                            <li>Cachorros</li>
+                            <li>Gatos</li>
+                            <li>Outros Bichos</li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="tw-flex tw-w-full tw-justify-end">
+                    <a href="">Sobre AdoteUmBixo</a>
                 </div>
             </div>
         </div>
     </header>
-    <header class="subheader">
-        <div class="tw-flex tw-align-center container-wide tw-mx-auto">
-            <div class="tw-w-full">
-                <a class="tw-flex" href="/">
-                    <img src="../../img/menuicon.webp" width="30px" height="20px" alt="icone do menu">
-                    <span>MENU</span>
-                </a>
-            </div>
-            <div class="tw-justify-center tw-w-full tw-flex">
-                <ul class="bixolista tw-flex">
-                    <li>Cachorros</li>
-                    <li>Gatos</li>
-                    <li>Outros Bichos</li>
-                </ul>
-            </div>
-            <div class="tw-flex tw-w-full tw-justify-end">
-                <a href="/">Sobre AdoteUmBixo</a>
-            </div>
-        </div>
-    </header>
-
-    <main>
+    <main id="main">
         <div>
             <img src="../../img/banner.webp" class="tw-w-full tw-h-auto" alt="banner da pagina principal" width="1700px" height="614px">
         </div>
@@ -65,16 +79,16 @@
         <section class="info">
             <img src="../../img/mountain1.webp" class="tw-w-full tw-h-auto" alt="desenho de montanha de fundo" width="1425px" height="173px">
             <div class="info-bg">
-                <div class="tw-flex">
-                    <div class="tw-text-align-center tw-w-full info-text">
+                <div class="tw-flex tw-justify-around tw-flex-wrap">
+                    <div class="tw-text-align-center info-text">
                         <h1>23 584</h1>
                         <h4>Pets adotados</h4>
                     </div>
-                    <div class="tw-text-align-center tw-w-full info-text">
+                    <div class="tw-text-align-center info-text">
                         <h1>R$2,3 M</h1>
                         <h4>Em comida e doações</h4>
                     </div>
-                    <div class="tw-text-align-center tw-w-full info-text">
+                    <div class="tw-text-align-center info-text">
                         <h1>+65</h1>
                         <h4>Abrigos  parceiros</h4>
                     </div>
@@ -90,7 +104,7 @@
     </main>
 
     
-    <main>
+    <main id="galeria">
         <section>
             <div class="result tw-flex tw-mx-auto tw-justify-center tw-align-center">
                 <h2>Você encontrou 53</h2>
@@ -191,7 +205,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -216,7 +230,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -241,7 +255,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -266,7 +280,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -291,7 +305,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -316,7 +330,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -341,7 +355,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -366,7 +380,7 @@
                     <article>
                         <div class="card">
                             <figure class="card-cat">
-                                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+                                <img src="../../img/gato.webp" data-bs-toggle="modal" data-bs-target="#myModal" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
                                 <figcaption>Subtítulo</figcaption>
                             </figure>
                             <div class="card-info">
@@ -391,9 +405,26 @@
             </div>
         </section>
     </main>
-
+    <!-- MODAL -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Gato</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="../../img/gato.webp" class="tw-w-full tw-h-auto" alt="gato fofo" width="155px" height="146px">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
     
-    <section class="main">
+    <section class="main" id="login">
         <div class="tw-w-full">
             <div class="tw-mx-auto intro">
                 <h1>
@@ -442,7 +473,7 @@
                 <p class="naotem">Não tem uma conta ainda? Sem problemas! Crie uma nova conta agora mesmo.</p>
             </div>
             <div class="tw-flex tw-justify-center">
-                <a class="basic-button basic-button--cinza" href="/">Cadastre-se</a>
+                <a class="basic-button basic-button--cinza" href="">Cadastre-se</a>
             </div>
         </div>
     </section>
